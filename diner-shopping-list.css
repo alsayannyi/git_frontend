@@ -1,0 +1,114 @@
+* {
+	transition: all .1s ease-in;
+	}
+
+body {
+	background: #3E3F47;
+	font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
+	margin: 0;
+	margin-top: 0;
+	padding-bottom: 50px;
+	border: 25px solid white;
+    box-sizing: border-box;
+	
+}
+
+#ListName p:first-child {
+	font-size: 26px;
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+form {
+	color: white;
+	
+}
+
+
+#block p {
+	display: block;
+	width: 1050px;
+	height: 50px;
+	margin: auto;
+	font-size: 22px;
+	display: flex;
+  	align-items: center }
+	
+	
+}
+
+#block p:hover:not(.no-hover) {
+	border-bottom: 3px solid white;
+ 	border-top: 3px solid white;
+ 	background: #625E77;
+
+}
+
+#block p:active:not(.no-hover) {
+	border-bottom: 3px solid white;
+ 	border-top: 3px solid white;
+ 	background: #EB7E7F;
+
+}
+
+/*input:active ~ span   {
+    background: #EB7E7F;
+      }*/
+
+#ListName {
+	background: #4C4E57;
+	color: #EB7E7F;
+	text-align: center;
+	margin-bottom: 27px;
+	}
+
+div ~ p  {
+	color: #EC7174;
+	display: block;
+	padding: 10px;
+	width: 50px;
+	
+	}
+
+span.openBracket:before {
+	content: "(";
+	}
+
+span.openBracket:after {
+	content: ")";
+}
+
+form > p:nth-child(odd) {
+   background: #88839E;
+   margin: none; 
+}
+
+#block p:last-child {
+   background: #4A4F56;
+   margin: none;
+   color: #EC7174;
+   text-align: center;
+   margin-top: 30px;
+  }
+
+
+form > p:nth-child(even) {
+   background: #7A7593;
+   
+}	
+
+input:checked ~ span   {
+    text-decoration:line-through;
+    color: #A3A0B5;
+      }
+
+
+ input[type=submit] {
+ 	border: 0;
+	background: #4A4F56;
+	color: #EB7E7F;
+	font-size: 24px;
+	box-shadow:none;
+	border-radius: 0px;
+ 	 }

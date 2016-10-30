@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+}
+
+main {
+	background: #F1F1F1;
+	font-family: Arial, sans-serif;
+}
+
+form {
+	display: inline-block;
+	width: 75%;
+	margin: auto;
+	padding: 0 5%;
+	position: relative;
+
+}
+.section {
+	margin-top: 1em;
+	padding: 0 5%;
+}
+
+.searchText {
+	font-weight: bold;
+	font-size: 5em;
+	color: #ec5a62;
+	border: none;
+	width: 98%;
+	padding: 0 100px 0 40px;
+	background: none;
+}
+
+input.searchText:focus {
+    outline: none;
+    }
+
+.searchButton {
+		width: 92px;
+		height: 92px;
+		overflow: hidden;
+		background: url("http://alexcss.github.io/huge-search/img/magnifier.svg") no-repeat;
+		position: absolute;
+		right: 0;
+		top: 0%;
+		text-indent: 200px;
+		border: none;
+
+}
+
+.leftColumn h2 {
+	display: block;
+	font-size: 2em;
+	margin: 5px 0 10px 0px;
+	padding-left: 40px;
+
+}
+.centralPart h2 {
+	display: block;
+	font-size: 2em;
+	margin: 5px 0 10px 0px;
+	padding-left: 40px;
+
+}
+.rightColumn h2 {
+	display: block;
+	font-size: 2em;
+	margin: 5px 0 10px 0px;
+	padding-left: 40px;
+
+}
+
+
+.leftColumn, .centralPart, .rightColumn {
+	width: 30%;
+	margin: 0 auto;
+	display: inline-block;
+	
+}
+
+.contentStyle {
+	list-style: none;
+}
+
+.contentStyle a {
+	color: #c2c2c2;
+	background: rgba(118,117,128,0.05);
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 5px;
+    display: block;
+	
+}
+
+.contentStyle a:hover {
+	color: #ec5a62;
+	background: rgba(118,117,128,0.1);
+}
+
+.contentStyle p {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.contentStyle img {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 20px;
+	margin: 0 10px 0 0;
+	
+}

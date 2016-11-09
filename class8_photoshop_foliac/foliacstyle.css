@@ -1,0 +1,345 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+  /*1 out of  5*/
+ /*---------style for header----------*/
+ 
+header {
+	height: 30%;
+	width: 100%;
+	position: absolute;
+	display: block;
+	background-image: url(images/header.png);
+	background-repeat: no-repeat;
+	/*opacity: 0.14;*/
+	/*padding-bottom: 300px;*/
+	}
+
+
+div.background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(64, 72, 88, 0.8);
+}
+
+div.logo {
+	position:relative;
+	display: inline-block;
+	width: 100px;
+	top: 20px;
+	left: 20%;
+}
+.logo img {
+	float: left;
+
+}
+/*------menu style for navagation-----*/
+nav {
+	display: block;
+	position: relative;
+	right: -50%;
+}
+nav.menu {
+	display: inline-block;
+	
+}
+.menu-elements {
+	position: relative;
+	display: block;
+	float: right;
+	list-style: none;
+	width: 600px;
+}
+
+.menu-elements li {
+	display: inline-block;
+	/*border-right: 1px solid grey;*/
+	margin: 15px auto;
+	width: 20%;
+	color: white;
+	font-size: 18px;
+	top: 15px;
+    padding: 10px;  
+}
+
+/*add slash after menu elements*/
+.menu-elements li:after {
+	content: " ";
+	border-right: 2px solid grey;
+	transform: rotate(25deg);
+}
+
+.menu-elements li:hover {
+	background: grey;
+	cursor: pointer;
+	 }
+/*------ end-----*/
+
+.headline {
+	text-align: center;
+	padding-top: 7%;
+	padding-bottom: 15px;
+	color: white;
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.headline p:first-child {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.button {
+	width: 100px;
+    margin: 40px auto;
+    position: relative;
+	padding: 5px;
+	border: 1px solid #48BF72;      
+}
+
+.button a {
+	text-decoration: none;
+	color: #48BF72; 
+	margin: auto;
+	text-align: center;
+}
+
+/*------2 out of 5-----*/
+/*----Block#2: 4 images & buttons-----*/
+
+div.section2 {
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 30%;
+	}
+
+ /*----buttons style----*/
+div.buttons {
+	width: 750px;
+	display: block;
+    margin: 40px auto;
+    position: relative;
+	padding: 5px;
+	/*border: 1px solid #48BF72;*/	
+}
+div.buttons a {
+	width: 120px;
+	text-decoration: none;
+	background-color: #EAEAEA; 
+	margin: auto 7px;
+	border-radius: 7px;
+	padding:10px;
+	text-align: center;
+}
+span {
+color: #394956;
+font-size: 20px;
+}
+
+div.buttons a:hover {
+	background-color: #48BF72;
+}
+span:hover {
+	color: white;
+}
+/*----end-----*/
+/*------subblocks with images-----*/
+div.images {
+
+	width: 70%;
+	display: block;
+	margin: auto;
+	padding-top: 0;
+    position: relative;	
+    top: 425px;
+}
+
+div.images1 {
+	width:450px;
+	display: inline-block;
+	margin: auto;
+	padding: 15px;
+	background: none;
+}
+
+div.images2 {
+	width:650px;
+	display: inline-block;
+	margin: auto;
+	padding: 15px;
+	background: none;
+}
+
+div.img1 {
+	display: block;
+    width: 450px;
+    height: 302px;
+    top: -432px;
+    margin-top: 15px;
+    position: absolute;
+    background-image: url(images/image1.png);
+    background-size: cover;
+}
+
+div.img4 {
+	display: block;
+    width: 450px;
+    height: 486px;
+    bottom: -365px;
+    position: absolute;
+    margin-bottom: 15px;
+    background-image: url(images/image4.png);
+    background-size: cover;
+}
+
+div.img2 {
+	display: block;
+    width: 650px;
+    height: 350px;
+    /*top: 0px;*/
+    margin-top: 15px;
+    position: absolute;
+    background-image: url(images/image2.png);
+    background-size: cover;
+}
+
+div.img3 {
+	display: block;
+    width: 650px;
+    height: 438px;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 15px;
+    background-image: url(images/image3.png);
+    background-size: cover;
+}
+
+div.images1 div:first-child {
+	margin-bottom:30px;
+}
+
+div.images2 div:first-child {
+	margin-bottom:30px;
+	
+}
+/*----Image's hover css----*/
+
+
+div.none {
+	background-color: rgba(72, 191, 114, 0.8);
+	width: 100%;
+	height: 100%;
+	display:none;
+	position: absolute;
+
+}
+div.none p {
+	margin: 30% auto;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+}
+
+div.images1 .img1:hover .none {
+	opacity: 0.86;
+	display: block;
+}
+
+div.images1 .img4:hover .none {
+	opacity: 0.86;
+	display: block;
+}
+div.images2 .img2:hover .none {
+	opacity: 0.86;
+	display: block;
+}
+
+div.images2 .img3:hover .none {
+	opacity: 0.86;
+	display: block;
+}
+
+/*div.none:hover {
+	display: block;
+	background-color: rgba(72, 191, 114, 0.8);
+}*/
+
+/*
+div.images1 .img4:hover {
+	opacity: 0.14;
+	}*/
+/*div.img4 .none:hover {
+	display: block;
+	background-color: rgba(72, 191, 114, 0.7);
+}*/
+
+/*---- Block3 -----*/
+
+.section3 {
+	width: 100%;
+    height: 500px;
+    display: block;
+    position: absolute;
+    top: 85%;
+    background-image: url(images/man.png);
+    background-repeat: no-repeat;
+}
+
+div.background2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(64, 72, 88, 0.8);
+	
+}
+/*---text-block formatting ---- */
+
+div.text {
+	display: block;
+	width: 25%;
+	position: relative;
+	top: 20%;
+	left: 50%;
+	}
+
+	div.text p:first-child {
+		font-size: 24px;
+		color: white;
+		line-height: 1.8;
+		font-weight: 700;
+	}
+	
+	div.text #line {
+		padding-top: 20px;
+		color: white;
+		line-height: 1.5;
+		font-size: 14px;
+	} 
+
+	div.text span {
+		color: white;
+		font-size: 18px;
+		line-height: 1.5;
+		}
+
+.button3 {
+	width: 100px;
+    margin: 40px 0;
+    position: relative;
+	padding: 5px;
+	border: 1px solid #3C4955;      
+}
+
+.button3 a {
+	text-decoration: none;
+	color: #3C4955; 
+	margin: auto;
+	text-align: center;
+}
+
+/*---Block3 end----*/

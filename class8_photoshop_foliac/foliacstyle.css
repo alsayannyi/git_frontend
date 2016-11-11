@@ -8,19 +8,15 @@
 header {
 	height: 30%;
 	width: 100%;
-	position: absolute;
-	display: block;
 	background-image: url(images/header.png);
 	background-repeat: no-repeat;
-	/*opacity: 0.14;*/
-	/*padding-bottom: 300px;*/
 	}
 
 
 div.background {
-	width: 100%;
+	/*width: 100%;*/
 	height: 100%;
-	position: absolute;
+	position: relative;
 	background-color: rgba(64, 72, 88, 0.8);
 }
 
@@ -33,58 +29,62 @@ div.logo {
 }
 .logo img {
 	float: left;
-
 }
+
+div.logo:after {
+	content: "";
+	clear: both;
+}
+
 /*------menu style for navagation-----*/
 nav {
-	display: block;
-	position: relative;
-	right: -50%;
-}
-nav.menu {
 	display: inline-block;
-	
-}
-.menu-elements {
 	position: relative;
-	display: block;
-	float: right;
-	list-style: none;
+    top: 25px;
+    float:right;
+	/*display: block;
+	position: relative;
+	right: -50%;*/
+}
+nav:after {
+	content: "";
+	clear: both;
+}
+
+.menu-elements {
 	width: 600px;
 }
 
 .menu-elements li {
 	display: inline-block;
-	/*border-right: 1px solid grey;*/
 	margin: 15px auto;
-	width: 20%;
+	width: 15%;
 	color: white;
 	font-size: 18px;
-	top: 15px;
+	list-style: none;
     padding: 10px;  
 }
 
 /*add slash after menu elements*/
 .menu-elements li:after {
-	content: " ";
-	border-right: 2px solid grey;
-	transform: rotate(25deg);
+	content: " " " " "/";
+	/*transform: rotate(25deg);*/
 }
 
 .menu-elements li:hover {
-	background: grey;
+	background: #48BF72;
+	border-radius: 5px;
 	cursor: pointer;
 	 }
 /*------ end-----*/
 
 .headline {
 	text-align: center;
-	padding-top: 7%;
-	padding-bottom: 15px;
+	padding-top: 5%;
 	color: white;
 	font-size: 30px;
 	text-transform: uppercase;
-	margin-bottom: 15px;
+	
 }
 
 .headline p:first-child {
@@ -94,18 +94,17 @@ nav.menu {
 }
 
 .button {
-	width: 100px;
+	width: 150px;
     margin: 40px auto;
-    position: relative;
-	padding: 5px;
 	border: 1px solid #48BF72;      
 }
 
 .button a {
 	text-decoration: none;
 	color: #48BF72; 
-	margin: auto;
-	text-align: center;
+	margin: 10px 20px;
+	font-size: 20px;
+	line-height: 1.5;
 }
 
 /*------2 out of 5-----*/
@@ -113,85 +112,73 @@ nav.menu {
 
 div.section2 {
 	width: 100%;
-	display: block;
-	position: absolute;
-	top: 30%;
 	}
 
  /*----buttons style----*/
 div.buttons {
 	width: 750px;
-	display: block;
     margin: 40px auto;
-    position: relative;
-	padding: 5px;
-	/*border: 1px solid #48BF72;*/	
 }
 div.buttons a {
-	width: 120px;
 	text-decoration: none;
 	background-color: #EAEAEA; 
 	margin: auto 7px;
 	border-radius: 7px;
 	padding:10px;
-	text-align: center;
 }
+
 span {
-color: #394956;
-font-size: 20px;
-}
+	color: #394956;
+	font-size: 20px;
+	}
 
 div.buttons a:hover {
 	background-color: #48BF72;
 }
+
 span:hover {
 	color: white;
 }
 /*----end-----*/
 /*------subblocks with images-----*/
 div.images {
-
-	width: 70%;
-	display: block;
+	height: 900px;
+	max-width: 75%;
+	width: 1200px;
 	margin: auto;
-	padding-top: 0;
-    position: relative;	
-    top: 425px;
+	position: relative;	
+}
+
+div.images:after {
+	content: "";
+	clear: both;
 }
 
 div.images1 {
-	width:450px;
 	display: inline-block;
+	width:450px;
 	margin: auto;
-	padding: 15px;
-	background: none;
+	float: left;
 }
 
 div.images2 {
 	width:650px;
 	display: inline-block;
 	margin: auto;
-	padding: 15px;
-	background: none;
+	float: right;
 }
 
 div.img1 {
 	display: block;
-    width: 450px;
     height: 302px;
-    top: -432px;
     margin-top: 15px;
-    position: absolute;
     background-image: url(images/image1.png);
     background-size: cover;
 }
 
 div.img4 {
 	display: block;
-    width: 450px;
     height: 486px;
-    bottom: -365px;
-    position: absolute;
     margin-bottom: 15px;
     background-image: url(images/image4.png);
     background-size: cover;
@@ -199,21 +186,15 @@ div.img4 {
 
 div.img2 {
 	display: block;
-    width: 650px;
     height: 350px;
-    /*top: 0px;*/
     margin-top: 15px;
-    position: absolute;
     background-image: url(images/image2.png);
     background-size: cover;
 }
 
 div.img3 {
 	display: block;
-    width: 650px;
     height: 438px;
-    bottom: 0;
-    position: absolute;
     margin-bottom: 15px;
     background-image: url(images/image3.png);
     background-size: cover;
@@ -235,11 +216,11 @@ div.none {
 	width: 100%;
 	height: 100%;
 	display:none;
-	position: absolute;
-
 }
+
 div.none p {
-	margin: 30% auto;
+	margin: auto;
+	padding: 150px;
 	font-size: 18px;
 	color: white;
 	text-align: center;
@@ -264,47 +245,27 @@ div.images2 .img3:hover .none {
 	display: block;
 }
 
-/*div.none:hover {
-	display: block;
-	background-color: rgba(72, 191, 114, 0.8);
-}*/
-
-/*
-div.images1 .img4:hover {
-	opacity: 0.14;
-	}*/
-/*div.img4 .none:hover {
-	display: block;
-	background-color: rgba(72, 191, 114, 0.7);
-}*/
-
 /*---- Block3 -----*/
 
 .section3 {
-	width: 100%;
     height: 500px;
-    display: block;
-    position: absolute;
-    top: 85%;
+    /*position: relative;*/
     background-image: url(images/man.png);
     background-repeat: no-repeat;
 }
 
 div.background2 {
-	width: 100%;
 	height: 100%;
-	position: absolute;
 	background-color: rgba(64, 72, 88, 0.8);
 	
 }
 /*---text-block formatting ---- */
 
 div.text {
-	display: block;
 	width: 25%;
 	position: relative;
 	top: 20%;
-	left: 50%;
+	left: 900px;
 	}
 
 	div.text p:first-child {
@@ -343,3 +304,125 @@ div.text {
 }
 
 /*---Block3 end----*/
+/*-----block4: contact form----*/
+.section4 {
+	width: 100%;
+	height: 440px;
+}
+form.contactfield {
+	width: 50%;
+	margin: 30px auto;
+}
+
+form.contactfield h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+div.name {
+	width: 38%;
+    height: 50px;
+    display: inline-block;
+    padding-right: 30px;
+    vertical-align: top;
+    border: 1px solid #3c4955;
+    margin-right: 135px;
+}
+
+div.email {
+	width: 42%;
+	height: 50px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #3c4955;
+}
+
+div.message {
+	width: 100%;
+	height: 228px;
+	display: inline-block;
+	margin-top: 25px;
+	border: 1px solid #3c4955;
+}
+
+textarea {
+	border: 0;
+    padding-top: 15px;
+    height: 210px;
+    margin-left: 20px;
+    width: 90%;
+    vertical-align: top;
+    color: #3c4955;
+    font-size: 15px;
+	
+}
+
+div.name input,
+div.email input {
+	height: 50px;
+	border: none;
+	vertical-align: top;
+	color: #3c4955;
+}
+
+
+
+
+div.name img,
+div.email img,
+div.message img {
+	margin-left: -6px;
+}
+
+div.name p {
+	color: grey;
+	
+}
+
+input[type="submit"] {
+	margin: 35px auto;
+	background: #48bf72;
+	color: white;
+	width: 100%;
+	height: 30px;
+	
+}
+/*---- block4 end----*/
+/*----block5:footer----*/
+
+footer {
+	background-color: #3c4955; 
+	width: 100%;
+	height: 150px;
+	margin-top: 35px;
+}
+
+footer p {
+	color: white;
+	margin-left: 100px;
+	font-size: 15px;
+}
+
+div.copyright {
+	margin-top: 60px;
+	float: left;
+}
+
+div.networks {
+margin-top: 45px;
+vertical-align: middle;
+display: inline-block;
+float: right;
+}
+
+.networks img {
+	width: 320px;
+	margin-right: 100px;
+}
+
+div.bottom:after {
+	clear: both;
+}
+

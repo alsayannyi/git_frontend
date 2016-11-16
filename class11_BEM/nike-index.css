@@ -61,15 +61,6 @@
 .menu__item:hover {
 	border-bottom: 1px solid white;
 }
-
-.center {
-	position: absolute; /*new formatting*/
-    margin: 130px 110px; /*new formatting*/
-	width: 750px;
-	height: 428px;
-	background-image: url(images/bg_block.jpg);
-}
-
 .background {
 	display: inline-block;
 	position: absolute;
@@ -80,18 +71,34 @@
 	background-image: url(images/background4.png);
 }
 
-.center__boots {
+.center {
+	position: absolute; /*new formatting*/
+    margin: 130px 110px; /*new formatting*/
+	width: 750px;
+	height: 428px;
+	background-image: url(images/bg_block.jpg);
+}
+	/*----left-aside section----*/
+
+.leftBlock {
+	position: relative;
+	display: inline-block;
+	width: 511px;
+	height: 428px;
+}
+
+.leftBlock__boots {
 	display: inline-block;
 	background-image: url(images/nike_boots.png);
 	width: 415px;
     height: 239px;
-    left: 80px;
+    left: 70px;
     top: 6px;
     position: relative;
     
 }
 
-.center__title {
+.leftBlock__title {
 	font-family: 'Abril Fatface', cursive;
     display: inline-block;
     text-shadow: 1px 1px 2px #A578A9;
@@ -104,52 +111,63 @@
     position: relative;
 }
 
-.center__model1,
-.center__model2,
-.center__model3 {
+.leftBlock__pics {
 	display: inline-block;
+	width: 160px;
+	height: 42px;
 	position: relative;
+	left: 200px;
+}
+
+.leftBlock__model1,
+.leftBlock__model2,
+.leftBlock__model3 {
+	display: inline-block;
 	width: 42px;
     height: 42px;
-    bottom: -50px;
-
+    margin: 0 4px;
 }
 
-.center__model1 {
+.leftBlock__model1 {
 	background-image: url(images/nike_model1.png);
-	left: -250px;
 }
-.center__model2 {
+.leftBlock__model2 {
 	background-image: url(images/nike_model2.png);
-	left: -230px;
 }
-.center__model3{
+.leftBlock__model3{
 	background-image: url(images/nike_model3.png);
-	left: -200px;
 }
-
-.center__plus {
-	display: inline-block;
-	position: relative;
-	width: 21px;
-    height: 21px;
-    bottom: -20px;
-}
-
-.center__img {
-	position: relative;
-	left: -100px;
-	}
-.center__img:hover {
+.leftBlock__model1:hover,
+.leftBlock__model2:hover,
+.leftBlock__model3:hover {
+	color: #002B36;
+	opacity: 0.5;
 	cursor: pointer;
 }
 
- /*----aside section----*/
+.leftBlock__plus {
+	display: inline-block;
+	position: absolute;
+	width: 21px;
+    height: 21px;
+    right: -80px;
+    bottom: 75px;
+}
+
+.leftBlock__img {
+	position: relative;
+	left: -100px;
+	}
+.leftBlock__img:hover {
+	cursor: pointer;
+}
+	/*---left-block end---*/
+ /*----right-aside section----*/
 .center__aside {
 	display: inline-block;
-    position: relative;
-    top: -344px;
-    left: 511px;
+    position: absolute;
+	/*top: -428px;*/
+    /*left: 511px;*/
     width: 239px;
     height: 428px;
     background-color: white;
@@ -272,11 +290,14 @@
 	margin: auto 6px;
     padding: 3px;
     font-weight: 800;
+    transition: none;
+    
 }
 
 .menuSize__Number:hover {
 	border: 1px solid black;
 	cursor: pointer;
+	padding: 2px;
 }	
 
 .details__cart {

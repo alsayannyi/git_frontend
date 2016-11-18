@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>FieldSet</title>
+</head>
+<body>
+<form action="form.php" method="POST">
+	<video>
+ 		<source src="">
+	</video>
+	<label class="nameField">
+		Name
+		<input type="text" name="fullName" placeholder="Full Name">	
+	</label>
+
+	<label class="emailField">
+		Email
+		<input type="email" name="email" placeholder="Email address">	
+	</label>
+
+	<label class="number">
+		<p>Number of Passes</p>
+		<select name="number">
+			<option value="number1" selected>1</option>
+			<option value="number2">2</option>
+			<option value="number3">3</option>
+			<option value="number4">4</option>
+			<option value="number5">5</option>
+		</select>
+	</label>
+	<label class="comments">
+		<p>Comments</p>
+		<textarea name="text" cols="30" rows="10"></textarea>	
+	</label>
+
+	<button name="send"><span>Purchase</span></button>
+</form>
+	
+</body>
+</html>

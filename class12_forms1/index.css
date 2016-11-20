@@ -94,6 +94,6 @@ button {
 	margin: 10px auto;
 }
 
-input[type=email]:invalid {
+/*input[type=email]:invalid {
 	background: red;
-}
+}*/

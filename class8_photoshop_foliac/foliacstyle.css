@@ -1,0 +1,428 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+  /*1 out of  5*/
+ /*---------style for header----------*/
+ 
+header {
+	height: 30%;
+	width: 100%;
+	background-image: url(images/header.png);
+	background-repeat: no-repeat;
+	}
+
+
+div.background {
+	/*width: 100%;*/
+	height: 100%;
+	position: relative;
+	background-color: rgba(64, 72, 88, 0.8);
+}
+
+div.logo {
+	position:relative;
+	display: inline-block;
+	width: 100px;
+	top: 20px;
+	left: 20%;
+}
+.logo img {
+	float: left;
+}
+
+div.logo:after {
+	content: "";
+	clear: both;
+}
+
+/*------menu style for navagation-----*/
+nav {
+	display: inline-block;
+	position: relative;
+    top: 25px;
+    float:right;
+	/*display: block;
+	position: relative;
+	right: -50%;*/
+}
+nav:after {
+	content: "";
+	clear: both;
+}
+
+.menu-elements {
+	width: 600px;
+}
+
+.menu-elements li {
+	display: inline-block;
+	margin: 15px auto;
+	width: 15%;
+	color: white;
+	font-size: 18px;
+	list-style: none;
+    padding: 10px;  
+}
+
+/*add slash after menu elements*/
+.menu-elements li:after {
+	content: " " " " "/";
+	/*transform: rotate(25deg);*/
+}
+
+.menu-elements li:hover {
+	background: #48BF72;
+	border-radius: 5px;
+	cursor: pointer;
+	 }
+/*------ end-----*/
+
+.headline {
+	text-align: center;
+	padding-top: 5%;
+	color: white;
+	font-size: 30px;
+	text-transform: uppercase;
+	
+}
+
+.headline p:first-child {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.button {
+	width: 150px;
+    margin: 40px auto;
+	border: 1px solid #48BF72;      
+}
+
+.button a {
+	text-decoration: none;
+	color: #48BF72; 
+	margin: 10px 20px;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+/*------2 out of 5-----*/
+/*----Block#2: 4 images & buttons-----*/
+
+div.section2 {
+	width: 100%;
+	}
+
+ /*----buttons style----*/
+div.buttons {
+	width: 750px;
+    margin: 40px auto;
+}
+div.buttons a {
+	text-decoration: none;
+	background-color: #EAEAEA; 
+	margin: auto 7px;
+	border-radius: 7px;
+	padding:10px;
+}
+
+span {
+	color: #394956;
+	font-size: 20px;
+	}
+
+div.buttons a:hover {
+	background-color: #48BF72;
+}
+
+span:hover {
+	color: white;
+}
+/*----end-----*/
+/*------subblocks with images-----*/
+div.images {
+	height: 900px;
+	max-width: 75%;
+	width: 1200px;
+	margin: auto;
+	position: relative;	
+}
+
+div.images:after {
+	content: "";
+	clear: both;
+}
+
+div.images1 {
+	display: inline-block;
+	width:450px;
+	margin: auto;
+	float: left;
+}
+
+div.images2 {
+	width:650px;
+	display: inline-block;
+	margin: auto;
+	float: right;
+}
+
+div.img1 {
+	display: block;
+    height: 302px;
+    margin-top: 15px;
+    background-image: url(images/image1.png);
+    background-size: cover;
+}
+
+div.img4 {
+	display: block;
+    height: 486px;
+    margin-bottom: 15px;
+    background-image: url(images/image4.png);
+    background-size: cover;
+}
+
+div.img2 {
+	display: block;
+    height: 350px;
+    margin-top: 15px;
+    background-image: url(images/image2.png);
+    background-size: cover;
+}
+
+div.img3 {
+	display: block;
+    height: 438px;
+    margin-bottom: 15px;
+    background-image: url(images/image3.png);
+    background-size: cover;
+}
+
+div.images1 div:first-child {
+	margin-bottom:30px;
+}
+
+div.images2 div:first-child {
+	margin-bottom:30px;
+	
+}
+/*----Image's hover css----*/
+
+
+div.none {
+	background-color: rgba(72, 191, 114, 0.8);
+	width: 100%;
+	height: 100%;
+	display:none;
+}
+
+div.none p {
+	margin: auto;
+	padding: 150px;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+}
+
+div.images1 .img1:hover .none {
+	opacity: 0.86;
+	display: block;
+}
+
+div.images1 .img4:hover .none {
+	opacity: 0.86;
+	display: block;
+}
+div.images2 .img2:hover .none {
+	opacity: 0.86;
+	display: block;
+}
+
+div.images2 .img3:hover .none {
+	opacity: 0.86;
+	display: block;
+}
+
+/*---- Block3 -----*/
+
+.section3 {
+    height: 500px;
+    /*position: relative;*/
+    background-image: url(images/man.png);
+    background-repeat: no-repeat;
+}
+
+div.background2 {
+	height: 100%;
+	background-color: rgba(64, 72, 88, 0.8);
+	
+}
+/*---text-block formatting ---- */
+
+div.text {
+	width: 25%;
+	position: relative;
+	top: 20%;
+	left: 900px;
+	}
+
+	div.text p:first-child {
+		font-size: 24px;
+		color: white;
+		line-height: 1.8;
+		font-weight: 700;
+	}
+	
+	div.text #line {
+		padding-top: 20px;
+		color: white;
+		line-height: 1.5;
+		font-size: 14px;
+	} 
+
+	div.text span {
+		color: white;
+		font-size: 18px;
+		line-height: 1.5;
+		}
+
+.button3 {
+	width: 100px;
+    margin: 40px 0;
+    position: relative;
+	padding: 5px;
+	border: 1px solid #3C4955;      
+}
+
+.button3 a {
+	text-decoration: none;
+	color: #3C4955; 
+	margin: auto;
+	text-align: center;
+}
+
+/*---Block3 end----*/
+/*-----block4: contact form----*/
+.section4 {
+	width: 100%;
+	height: 440px;
+}
+form.contactfield {
+	width: 50%;
+	margin: 30px auto;
+}
+
+form.contactfield h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+div.name {
+	width: 38%;
+    height: 50px;
+    display: inline-block;
+    padding-right: 30px;
+    vertical-align: top;
+    border: 1px solid #3c4955;
+    margin-right: 135px;
+}
+
+div.email {
+	width: 42%;
+	height: 50px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #3c4955;
+}
+
+div.message {
+	width: 100%;
+	height: 228px;
+	display: inline-block;
+	margin-top: 25px;
+	border: 1px solid #3c4955;
+}
+
+textarea {
+	border: 0;
+    padding-top: 15px;
+    height: 210px;
+    margin-left: 20px;
+    width: 90%;
+    vertical-align: top;
+    color: #3c4955;
+    font-size: 15px;
+	
+}
+
+div.name input,
+div.email input {
+	height: 50px;
+	border: none;
+	vertical-align: top;
+	color: #3c4955;
+}
+
+
+
+
+div.name img,
+div.email img,
+div.message img {
+	margin-left: -6px;
+}
+
+div.name p {
+	color: grey;
+	
+}
+
+input[type="submit"] {
+	margin: 35px auto;
+	background: #48bf72;
+	color: white;
+	width: 100%;
+	height: 30px;
+	
+}
+/*---- block4 end----*/
+/*----block5:footer----*/
+
+footer {
+	background-color: #3c4955; 
+	width: 100%;
+	height: 150px;
+	margin-top: 35px;
+}
+
+footer p {
+	color: white;
+	margin-left: 100px;
+	font-size: 15px;
+}
+
+div.copyright {
+	margin-top: 60px;
+	float: left;
+}
+
+div.networks {
+margin-top: 45px;
+vertical-align: middle;
+display: inline-block;
+float: right;
+}
+
+.networks img {
+	width: 320px;
+	margin-right: 100px;
+}
+
+div.bottom:after {
+	clear: both;
+}
+

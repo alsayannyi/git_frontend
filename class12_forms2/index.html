@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="formstyle.css">
+	<title>Form</title>
+</head>
+<body>
+
+	<form action="send.php" method="GET">
+		<p>Please fill in the form. Required lines are *</p>
+		<fieldset class="first">
+			<legend>Contact Form</legend>
+
+			<label class="nameField">
+			Name*
+			<input type="text" name="fullName" required="" >	
+			</label>
+
+			<label class="mobile">
+			Mob
+			<input type="tel" name="mobile" >	
+			</label>
+
+			<label class="email">
+			Email*
+			<input type="email" name="mail" required="">	
+			</label>
+
+		</fieldset>
+
+		<fieldset class="second">
+			<legend>Contact Form</legend>
+			<label class="age">
+			Age*
+			<input type="text" name="age" required>	
+			</label>	
+
+			<label class="gender">
+				Gender
+				<select name="sex">
+					<option value="gender" selected>Man</option>
+					<option value="gender">Woman</option>
+				</select>
+			</label>
+
+			<label class="comments">
+				<p>Your personal features</p>
+				<textarea name="text" cols="22" rows="8"></textarea>
+		</fieldset>
+
+		<fieldset class="third">
+			<legend>Choose your favourite pets</legend>
+			<label><input type="checkbox" name="pet" value="dog">dog</label>
+			<label><input type="checkbox" name="pet" value="human">human</label>
+			<label><input type="checkbox" name="pet" value="cat">cat</label>
+			<label><input type="checkbox" name="pet" value="snake">snake</label>
+			<label><input type="checkbox" name="pet" value="horse">horse</label>
+			<label><input type="checkbox" name="pet" value="elephant">elephant</label>
+			<label><input type="checkbox" name="pet" value="tortoise">tortoise</label>
+		</fieldset>
+
+		<button type="submit" >Send information</button>
+	</form>
+	
+</body>
+</html>

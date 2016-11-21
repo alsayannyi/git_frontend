@@ -48,6 +48,9 @@ button {
     border-radius: 5px;
     background-color: #648880;
 }
+button:hover {
+	cursor: pointer;
+}
 
 span {
 	color: white;

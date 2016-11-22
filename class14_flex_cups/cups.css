@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.flex-container {
+	width: 900px;
+	height: 400px;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #FCDE7E;
+}
+
+.flex-item1 {
+	margin: auto;
+	flex-basis: 25%;
+	height: 250px;
+	background-color: white;
+	text-align: center;
+	
+        
+}
+.flex-item2 p:first-child,
+.flex-item1 p:first-child {
+	margin-top: 10%;
+	color: #02995B;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+span {
+	color: Black;
+	font-size: 22px;
+	font-weight: 900;
+}
+
+p {	
+	color: grey;
+	font-size: 16px;
+	margin: auto;
+	margin-bottom: 5%;
+	width: 50%;
+}
+
+.flex-item2 {
+	text-align: center;
+	margin: auto;
+	background-color: white;
+	flex-basis: 25%;
+	/*flex-grow: 2;*/
+	height: 300px;
+	
+}
+
+.img1 {
+	margin: 10% auto;
+	background-image: url(images/bronzecupplans.png);
+	background-size: cover;
+	width: 30%;
+	height: 67px;;
+}
+
+.img2 {
+	margin: 10% auto;
+	background-image: url(images/goldcupplans.png);
+	background-size: cover;
+	width: 30%;
+	height: 67px;
+}
+
+.img3 {
+	margin: 10% auto;
+	background-image: url(images/graycupplans.png);
+	background-size: cover;
+	width: 30%;
+	height: 67px;
+}

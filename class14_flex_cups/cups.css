@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.flex-container {
+	/*width: 70%;*/
+	height: 400px;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #FCDE7E;
+}
+
+@media screen and (max-width: 1440px)  {
+	.flex-container {
+		width: 70%;
+		height: 400px;
+	}
+}
+
+@media screen and (min-width: 1440px)  {
+	.flex-container {
+		width: 55%;
+		height: 500px;
+	}
+}
+.flex-item1 {
+	margin: auto;
+	flex-basis: 25%;
+	height: 250px;
+	background-color: white;
+	text-align: center;
+	
+        
+}
+.flex-item2 p:first-child,
+.flex-item1 p:first-child {
+	margin-top: 10%;
+	color: #02995B;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+span {
+	color: Black;
+	font-size: 22px;
+	font-weight: 900;
+}
+
+p {	
+	color: grey;
+	font-size: 16px;
+	margin: auto;
+	margin-bottom: 5%;
+	width: 50%;
+}
+
+.flex-item2 {
+	text-align: center;
+	margin: auto;
+	background-color: white;
+	flex-basis: 25%;
+	/*flex-grow: 2;*/
+	height: 300px;
+	
+}
+
+.img1 {
+	margin: 5% auto;
+	background-image: url(images/bronzecupplans.png);
+	background-size: cover;
+	width: 30%;
+	height: 80px;;
+}
+
+.img2 {
+	margin: 5% auto;
+	background-image: url(images/goldcupplans.png);
+	background-size: cover;
+	width: 30%;
+	height: 80px;
+}
+
+.img3 {
+	margin: 5% auto;
+	background-image: url(images/graycupplans.png);
+	background-size: cover;
+	width: 30%;
+	height: 80px;
+}
+
+/*.img1:hover,
+.img2:hover,
+.img3:hover {
+	width: 50%;
+	height: 120px;
+	margin: 10px auto;
+	
+}*/
+
+/*.flex-item1:hover,
+.flex-item2:hover {
+	height: auto;
+}*/
+
+.flex-item1:hover p {
+	font-size: 12px;
+}
+.flex-item1:hover p:first-child {
+	font-size: 18px;
+}
+.flex-item1:hover span {
+	font-size: 14px;
+}
+.flex-item1:hover .img1,
+.flex-item1:hover .img3 {
+	width: 45%;
+	height: 120px;
+	margin: 10px auto;
+}
+
+.flex-item2:hover p {
+	font-size: 12px;
+}
+.flex-item2:hover p:first-child {
+	font-size: 18px;
+}
+.flex-item2:hover span {
+	font-size: 14px;
+}
+
+.flex-item2:hover .img2 {
+	width: 45%;
+	height: 120px;
+	margin: 10px auto;
+}

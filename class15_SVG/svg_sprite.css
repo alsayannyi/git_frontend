@@ -1,0 +1,45 @@
+
+#logo .cls-1 {
+        stroke: #fff;
+      }
+
+ #logo .cls-1, .cls-2 {
+        stroke-width: 2px;
+        fill: none;
+      }
+
+ #logo  .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+#logo .cls-2 {
+        stroke: #f6f7fc;
+      }
+
+#logo .cls-3, .cls-4 {
+        fill: #fff;
+      }
+	
+
+
+#scroll2  .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+	
+
+#shape2  .cls-1 {
+        /*fill: #3c3c3c;*/
+        fill-rule: evenodd;
+	}
+
+#shape3 .cls-1 {
+        /*fill: #3c3c3c;*/
+        fill-rule: evenodd;
+}
+
+#shape4 .cls-1 {
+        /*fill: #3c3c3c;*/
+        fill-rule: evenodd;
+	
+}

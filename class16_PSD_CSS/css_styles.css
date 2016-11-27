@@ -260,7 +260,14 @@ ul.sections1 {
 	box-sizing: border-box;
 	/*margin: 14px 15px;*/
 }
-
+.flex-item2:hover:not(:first-child) {
+	/*height: 344px;*/
+	border-top: 6px solid #f44235;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+.flex-item2:hover:not(:first-child) [class*="img"] {
+	height: 275px;
+}
 
 .row1 {
 	margin-top: 0;
@@ -326,4 +333,76 @@ ul.sections1 {
     color: #999999;
     background-color: white;
     text-align: left;
+}
+/*--flexbox end----*/
+
+.portfolio button {
+	margin-top: 62px;
+	width: 280px;
+	height: 63px;
+	border: 2px solid #00a5ff;
+	border-radius: 40px;
+	background-color: transparent;
+	color: #00a5ff; 
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: OpenSans, sans-serif;
+	outline-style: none;
+}
+
+
+.portfolio button:hover {
+	background-color: #00a5ff	;
+	cursor: pointer;
+	border: 2px solid #00a5ff;
+	color: white;
+	font-weight: 400;
+} 
+
+/*---end---*/
+/*---brands section----*/
+.brands {
+	height: 429px;
+}
+
+.brands h1 {
+	padding-top: 70px;
+	height: 32px;
+	color: #3a3f4b;
+	font-size: 32px;
+	font-family: Lora, sans-serif;
+	text-transform: uppercase;
+}
+
+
+/*div.border1 {
+	margin: 0 auto;
+	margin: 29px auto 91px;
+	display: block;
+	width: 147px;
+	height:4px; 
+	background-color: rgb(0, 165, 255); 
+}*/
+
+/*---flexbox3---*/
+
+.flex-container3 {
+	margin: auto;
+	display: flex;
+    height: 124px;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+	box-sizing: border-box;
+}
+
+.flex-item3 {
+	margin: auto;
+	height: 124px;
+	width: 149px;
+}
+
+.flex-item3 a {
+	text-decoration: none;
 }

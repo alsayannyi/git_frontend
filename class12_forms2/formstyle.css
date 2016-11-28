@@ -1,0 +1,98 @@
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+form {
+	width: 500px;
+	margin: 10px auto;
+	height: 800px;
+	font-size: 15px;
+	color: black;
+}
+
+form > p {
+	margin: 0;
+	font-style: italic;
+	font-size: 16px;
+}
+
+.first {
+	display: inline-block;
+	width: 450px;
+	height: 200px;
+	
+}
+.first label {
+	display: inline-block;
+	width: 70%;
+	margin: 15px auto;
+}
+.first input {
+	margin-left: 50px;
+}
+.mobile input {
+    margin-left: 65px;
+    }
+
+.second {
+	display: inline-block;
+	width: 450px;
+	height: 300px;
+	margin: auto;
+}
+
+.second label {
+	display: inline-block;
+	width: 70%;
+	margin: 15px auto;
+}
+.second input {
+	margin-left: 50px;
+}
+
+.gender select {
+	margin-left: 35px;
+	width: 169px;
+}
+.comments p {
+	display: inline-block;
+    width: 30px;
+    padding-top: 20px;
+    vertical-align: top;
+}
+.comments textarea {
+	margin-left: 50px;
+}
+.third {
+	display: inline-block;
+	width: 450px;
+	height: 150px;
+	margin: auto;
+}
+
+.third legend {
+	padding-left: 5px;
+}
+
+.third label {
+	display: inline-block;
+    width: 70px;
+    margin: 7px 17px;
+    padding: 0px;
+}
+.third input {
+	display: inline-block;
+    margin: 15px auto;
+    }
+button {
+	margin-top: 20px;
+	width: 140px;
+	height: 25px;
+    border-radius: 5px;
+}
+
+button:hover {
+	cursor: pointer;
+}

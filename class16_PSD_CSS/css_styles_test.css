@@ -636,3 +636,100 @@ div.contacts {
  .networks {
  	height: 90px;
  }
+
+
+ .menu2 {
+ 	margin-left: 325px;
+ 	margin-top: 10%;
+	width: 500px;
+	height: 50px;
+}
+
+ul.sections2 {
+	width: 100%;
+}
+
+.sections2 li {
+	display: inline-block;
+	width: 80px;
+	list-style: none;
+	font-size: 14px;
+	color: white;
+	font-weight: 300;
+	padding-right: 15px;
+	
+}
+
+
+.sections2 li:hover {
+	color: rgb(0, 165, 255);
+	cursor: pointer;
+}
+
+.sections2 li:hover span {
+	padding-bottom: 10px;
+	border-bottom:  1px solid #00a5ff;
+}
+
+div.top {
+	margin-top: 115px;
+	color: white;
+}
+
+.top input {
+	background-color: transparent;
+	display: inline-block;
+	width: 305px;
+	height: 50px;
+	/*width: 25%;*/
+	border: none;
+    border-bottom: 1px solid #999a9c;
+}
+.top input:focus {
+    border-bottom: 1px solid #00a5ff;
+	outline: none;
+}
+
+.top label:first-child {
+	margin-right: 154px;
+}
+label {
+	display: inline-block;
+	
+	font-family: OpenSans, sans-serif;
+	color: white;
+	background-color: transparent;
+	font-size: 20px;
+}
+
+textarea {
+	width: 768px;
+	border: none;
+	background-color: transparent;
+    border-bottom: 1px solid #999a9c;
+	
+}
+textarea:focus {
+    border-bottom: 1px solid #00a5ff;
+	outline: none;
+}
+
+form button {
+	margin-top: 39px;
+	width: 280px;
+	height: 63px;
+	background-color: transparent;
+	color: #00a5ff; 
+	font-size: 16px;
+	font-family: OpenSans, sans-serif;
+	border: 2px solid #00a5ff;
+	outline-style: none;
+	border-radius: 40px;
+}
+
+form button:hover {
+	cursor: pointer;
+	color: white; 
+	border: 2px solid white;
+	
+} 

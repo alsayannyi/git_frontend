@@ -103,12 +103,11 @@ button:hover {
 	font-weight: 400;
 } 
 
-/*----services section-----*/
+/*----2nd section: services-----*/
 
 .services {
 	text-align: center;
 	height: 537px;
-	
 }
 
 .services h1 {
@@ -118,7 +117,6 @@ button:hover {
 	font-size: 32px;
 	font-family: Lora, sans-serif;
 	text-transform: uppercase;
-	
 }
 
 div.border {
@@ -360,7 +358,7 @@ ul.sections1 {
 } 
 
 /*---end---*/
-/*---brands section----*/
+/*---5th section: brands----*/
 .brands {
 	text-align: center;
 	height: 429px;
@@ -431,7 +429,7 @@ ul.sections1 {
 .comments div.border1 {
 	margin: 29px auto 50px;
 }
- /*----section with pics and comments----*/
+ /*----sub-section with pics and comments----*/
 .people {
 	margin: auto;
 	width: 655px;
@@ -582,3 +580,59 @@ div.circleLeft:hover div.beardman {
 
 /*----section with pics end----*/
 /*--- full 5th section end---*/
+
+ /*---footer----*/
+
+footer {
+	height: 800px;
+}
+div.box {
+ 	height: 710px;
+	clear: both;
+	background-color: #3b404c;
+	color: white;
+}
+
+div.contacts {
+	float: left;
+	display: inline-block;
+	width: 31%;
+	height: 100%;
+	margin-right: 35px;
+	/*padding-left: 110px;*/
+	font-family: Lora, sans-serif;
+}
+
+.contacts h1 {
+	margin-top: 80px;
+	padding-left: 110px;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.contacts h2 {
+	margin-top: 15%;
+	padding-left: 110px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.contacts p {
+	padding-left: 110px;
+	margin-top: 25px;
+	font-size: 24px;
+	color: #64676d;
+}
+
+ form {
+ 	display: inline-block;
+ 	width: 64%;
+ 	height: 100%;
+ 	float: right;
+	font-family: OpenSans, sans-serif;
+ 	
+ } 
+
+ .networks {
+ 	height: 90px;
+ }

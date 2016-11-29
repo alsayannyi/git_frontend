@@ -144,11 +144,20 @@ div.border {
 	height: 350px;
 }
 
-.flex-item img {
+ .flex-item .icon1:hover  {
+ 	cursor: pointer;
+	}
+
+.flex-item .icon1:hover #icon1 .st1 {
+	fill: orange;
+	}
+
+/*.flex-item img {
 	height: 81px;
 	width: 81px;
 	margin-bottom: 18px;
-}
+}*/
+
 .flex-item h3 {
 	height: 22px;
 	color: #3a3f4b;
@@ -620,7 +629,7 @@ div.contacts {
 .contacts p {
 	padding-left: 110px;
 	margin-top: 25px;
-	font-size: 24px;
+	font-size: 18px;
 	color: #64676d;
 }
 
@@ -633,9 +642,7 @@ div.contacts {
  	
  } 
 
- .networks {
- 	height: 90px;
- }
+ 
 
 
  .menu2 {
@@ -672,7 +679,7 @@ ul.sections2 {
 }
 
 div.top {
-	margin-top: 115px;
+	margin-top: -10px;
 	color: white;
 }
 
@@ -690,12 +697,16 @@ div.top {
 	outline: none;
 }
 
+.top input[type="text"]::placeholder { 
+	color: white; 
+} 
+
 .top label:first-child {
 	margin-right: 154px;
 }
 label {
 	display: inline-block;
-	
+	margin-top: 50px;
 	font-family: OpenSans, sans-serif;
 	color: white;
 	background-color: transparent;
@@ -715,6 +726,8 @@ textarea:focus {
 }
 
 form button {
+	margin-left: 0;
+    display: block;
 	margin-top: 39px;
 	width: 280px;
 	height: 63px;
@@ -733,3 +746,94 @@ form button:hover {
 	border: 2px solid white;
 	
 } 
+
+.networks {
+ 	height: 90px;
+ 	position: relative;
+ }
+
+.signature {
+	position: absolute;
+	bottom: 30%;
+    left: 115px;
+	display: inline-block;
+	width: 170px;
+	line-height: 2;
+	color: #999999;
+	font-size: 12px;
+	font-family: OpenSans, sans-serif;
+}
+
+.social {
+	display: inline-block;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    bottom: 30%;
+    right: 115px;
+}
+
+
+.social img {
+	display: inline-block;
+	width: 31px;
+	height: 31px;
+	margin: auto 6px;
+}
+
+.social img:hover {
+	background-color: #00a5ff;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+div.scroll {
+	position: absolute;
+    right: 50%;
+    top: -30px;
+    background-image: url(images/scroll.png);
+    background-size: cover;
+    width: 67px;
+    height: 67px;
+	
+}
+
+div.scroll:hover {
+	cursor: pointer;
+	transform: rotateX(180deg);
+}
+
+/*-----SVG  Sprite Styles----*/
+
+#icon1 .st0 {
+	fill:#FEFEFE;
+	/*fill:orange;*/
+	
+	}
+#icon1 .st1 {
+	fill:#0095FF;
+	/*fill:orange;*/
+	}
+
+.icon3:hover #icon3 {
+	fill: #f44336;
+}
+
+.icon1:hover #icon1 .st1 {
+	fill:#f44336;
+	}	
+
+
+/*#icon2 .cls-1 {
+        fill-rule: evenodd;
+        filter: url(#filter2);
+      }
+#icon2 path {
+        filter: url(#filter2);
+}*/
+
+
+/*#icon4 .cls-1 {
+        fill-rule: evenodd;
+        filter: url(#filter4);
+      }*/

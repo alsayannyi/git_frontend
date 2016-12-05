@@ -1,0 +1,282 @@
+@text-color: #333333;
+@headline-color: #ffcc00;
+@text-size: 14px;
+@headline-size: 24px;
+
+@headline-font: "Roboto", OpenSans;
+@text-font: "Raleway"; 
+
+
+// header styles
+
+body {
+	// width: 1920px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+header {
+	margin-top: 110px;
+	
+	text-align: center;
+	width: 100%;
+	height: 243px;
+	h3 {
+		color: @text-color;
+		font-size: @headline-size - 6px;
+		font-family: @headline-font;
+	}
+
+	h1 {
+		color: @headline-color;
+		font-size: 60px;
+		font-family: @text-font;
+	}
+}
+
+//main block
+
+main {
+	width: 100%;
+	height: 754px;
+	clear: both;
+	
+	aside.left {
+		display: inline-block;
+		float: left;
+		width: 957px / 1920px *100%;
+		height: 100%;
+		
+		div.photo {
+			margin-top: 123px;
+			float: right;
+			margin-right: 97px / 957px * 100%;
+			// margin-left: 472px / 957px * 100%;
+			width: 388px;
+			height: 388px;
+			padding: 14px;
+			
+			> img {
+				display: inline-block;
+				box-sizing: border-box;
+				height: 388px;
+				width: 388px;
+				border: 1px solid #ffcc00;
+		}
+		}
+		
+		div.top,
+		div.bottom {
+			position: relative;
+			margin: auto;
+			width: 218px;
+			height: 14px;
+		}
+		
+	}
+
+	div.centerLine {
+	    position: absolute;
+	    display: inline-block;
+	    margin-top: 39px;
+	    left: 957px / 1920px *100%;;
+	    width: 1px;
+	    height: 560px;
+	    background-color: #fc0;
+		}
+
+	aside.right {
+		position: relative;
+		display: inline-block;
+		margin: auto;
+		float: left;
+		width: 961px / 1920px * 100%;
+		height: 100%;
+		
+		
+		
+		div.icons {
+			margin: 29px auto 31px;
+			height: 40px;
+			width: 160px;
+			
+			> img {
+				display: inline-block;
+				margin: auto 2.5px;
+				width: 30px;
+				height: 30px;
+				
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+		
+		div.text {
+			font-size: @text-size;
+			font-family: @text-font;
+			color: @text-color;
+			margin: auto;
+			width: 440px/ 962px * 100%;
+			height: auto;
+		}
+	}
+	
+
+}
+aside.right h2 {
+	margin-top: 142px;
+	text-align: center;
+	font-size: @headline-size + 12px;
+	font-family: @headline-font;
+	
+}
+
+aside.right h4 {
+	text-align: center;
+	margin: 0 auto;
+	font-size: @headline-size;
+	font-family: @text-font;
+	color: @text-color;
+	
+}
+div.bonfire {
+	position: relative;
+	display: inline-block;
+	margin: 54px auto 0;
+	background-image: url(images/bonfire.png);
+	width: 16px;
+	height: 19px;
+}
+
+div.bonfire:before,
+div.bonfire:after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 210px;
+	background-color: #ffcc00;
+	top: 8px;
+}
+
+div.bonfire:before {
+	right: 23px;
+}
+div.bonfire:after {
+	left: 23px;
+}
+div.border {
+	width: 100px;
+	height: 2px;
+	background-color: #ffcc00;
+	margin: 34px auto 33px;
+}
+
+div.border1 {
+	position: relative;
+	width: 20px;
+	height: 4px;
+	background-color: #ffcc00;
+	margin: 22px auto 26px;
+}
+div.border1:before, 
+div.border1:after {
+	content: "";
+	background-color: #ffcc00;
+	position: absolute;
+	height: 4px;
+	width: 10px;
+	top: 0;
+}
+
+div.border1:before {
+	right: 25px;
+}
+div.border1:after {
+	left: 25px;
+}
+div.link {
+	margin: 0 auto;
+	width: 130px;
+	height: 24px;
+}
+div.link:hover a {
+	background-color: #ffcc00;
+	color: white;
+}
+
+div.link a {
+	padding: 6px 12px;
+	border: 1px solid #ffcc00;
+	text-decoration: none;
+	font-size: @text-size;
+	color: @text-color;
+}
+
+div.circles {
+		margin: auto;
+		width: 80px;
+		height: 14px;
+		> .circle {
+			display: inline-block;
+			margin: 0 4.5px;
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			border: 1px solid #ffcc00;
+			background-color: #ffcc00;
+			
+			&:hover {
+				border-radius: 5px;
+				border: 1px solid #ffcc00;
+				background-color: white;
+				cursor: pointer;
+			}
+		}
+	}
+
+// making angles-2 
+
+div.top:after,
+div.top:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	border-top: 1px solid #ffcc00;
+	width: 100px;
+	height: 100px;
+}
+
+div.top:after {
+	left: -100px;
+	border-left: 1px solid #ffcc00;
+}
+div.top:before {
+	right: -100px;
+	border-right: 1px solid #ffcc00;
+}
+
+div.bottom:after,
+div.bottom:before {
+	content: "";
+	position: absolute;
+	border-bottom: 1px solid #ffcc00;
+	bottom: 0px;
+	width: 100px;
+	height: 100px;
+}
+
+div.bottom:after {
+	left: -100px;
+	border-left: 1px solid #ffcc00;
+	
+}
+div.bottom:before {
+	right: -100px;
+	border-right: 1px solid #ffcc00;
+	
+}
+
+

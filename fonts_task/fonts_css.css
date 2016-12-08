@@ -42,12 +42,17 @@ br {
     	}
 
 .menu li {
+<<<<<<< HEAD
+=======
+	width: 80px;
+>>>>>>> eb1914922d5e6898f8dbe1f35345afda08fb6ccf
 	float: left;
     margin: auto;
     padding: 10px;
     font-weight: 600;
 }
 
+<<<<<<< HEAD
 .menu li:hover {
 	background: #F5F5F5;
 	cursor: pointer; 
@@ -56,6 +61,15 @@ br {
 
 .menu li a {
 	margin: 5px;
+=======
+.menu li:hover:not(.internal) {
+	background: grey;
+	cursor: pointer;
+	 }
+
+.menu  li a {
+	margin: auto 0;
+>>>>>>> eb1914922d5e6898f8dbe1f35345afda08fb6ccf
 	text-decoration: none;
  	color:black;
  	}
@@ -63,14 +77,20 @@ br {
 
  .internal  {
  	display: none;
+<<<<<<< HEAD
  	width:20px;
  	margin-top: 35px;
  	padding-left: 0;
 	background: white;
+=======
+ 	margin-top: 30px;
+ 	padding-left: 0;
+>>>>>>> eb1914922d5e6898f8dbe1f35345afda08fb6ccf
 	list-style: none;
 	}
 
 .internal li {
+<<<<<<< HEAD
 	background: grey;
 	margin: 5px;
 	padding-top: 5px;
@@ -80,12 +100,26 @@ br {
 	display: block;
 	background: grey;
 }*/
+=======
+	background: white;
+	margin: 1px 0;
+	padding-top: 5px;
+}
+
+.active:hover .internal {
+	display: block;
+	overflow: hidden;
+}
+>>>>>>> eb1914922d5e6898f8dbe1f35345afda08fb6ccf
 
 div.part2 {
 	margin-top: 3em;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> eb1914922d5e6898f8dbe1f35345afda08fb6ccf
 div.part2 p:first-child {
 	margin-left: 0.6em;
 	line-height: 2em;

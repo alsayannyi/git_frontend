@@ -1,0 +1,231 @@
+@main-font: 'Lato', sans-serif;
+@cat-rate: 1.5; 
+
+body {
+	background-color: #F0F0F0;
+}
+
+.cat-header {
+	height: 172px / 1438px * 100%;
+	width: 1492px / 2300px *100%;
+	margin: auto;
+	padding-top: 100px / 2300px *100%;
+	&__pageName{
+		display: inline-block;
+		// margin-left: 385px / 2300px *100%;
+		color: black;
+		text-transform: uppercase;
+		font-size: 72px / @cat-rate;
+		font-family: @main-font;
+		font-weight: 300;
+	}
+	&__icon{
+		display: inline-block;
+		position: relative;
+		width: 343px;
+		height: 72px;
+		float: right;
+		&:after {
+			content: "";
+			clear: both;
+		}
+		
+	}
+	&__text {
+		display: inline-block;
+		position: absolute;
+    	right: 70px;
+	    margin: auto;
+	    width: 80px / 340px * 100%;
+	    right: 70px;
+	    vertical-align: top;
+	    line-height: 72px / @cat-rate;
+	    text-transform: uppercase;
+	    color: #c7c7c7;
+	    font-family: Lato,sans-serif;
+	    font-weight: 400;
+	    font-size: 18px / @cat-rate;
+	}
+	&__livingRoom{
+		position: absolute;
+    	right: 0;
+		display: inline-block;
+		vertical-align: bottom;
+		margin-left: 37px;
+		width: 53px / @cat-rate;
+		height: 57px / @cat-rate;
+	}
+}
+// flex-box for cat-section
+.cat-section1 {
+	width: 1492px / 2300px *100%;
+	height: 418px / 1438px * 100%;
+	padding-top: 100px / 1438px * 100%;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	margin: auto;
+	&__item {
+		display: block;
+		text-decoration: none;
+		width: 343px / 1492px * 100%;
+		height: 418px / 978px *100%;
+		background-color: white;
+		&--modifier{
+			width: 1109px / 1492px * 100%;
+			position: relative;
+			margin: 0;
+    		}
+	}
+	.cat-productImg{
+		display: block;
+		background-image: url(images/categories_redSeat.png);
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		width: 193px / @cat-rate;
+		height: 204px / @cat-rate;
+		margin: auto;
+	}
+	.cat-productImg2 {
+		display: inline-block;
+		background-image: url(images/categories_table.png);
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		width: 198.67px;
+		height: 198.67px;
+		margin-left: 35px;
+	}
+}
+
+//flexbox-2
+.cat-section2 {
+	width: 1492px / 2300px *100%;
+	height: 418px / 1438px * 100%;
+	padding-top: 25px;
+	// padding-top: 100px / 1438px * 100%;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	margin: auto;
+	&__item {
+		display: block;
+		text-decoration: none;
+		width: 343px / 1492px * 100%;
+		height: 418px / 978px *100%;
+		background-color: white;
+		&--modifier2{
+			width: 726px / 1492px * 100%;
+			position: relative;
+			margin: 0;
+		}
+	}
+	.cat-productImg3 {
+		display: block;
+		background-image: url(images/categories_blueSeat.png);
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		width: 193px / @cat-rate;
+		height: 204px / @cat-rate;
+		margin: auto;
+	}
+	.cat-productImg4 {
+		display: inline-block;
+		background-image: url(images/categories_bed.png);
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		width: 198.67px;
+		height: 198.67px;
+		margin-left: 20px;
+	}
+	.cat-productImg5 {
+		display: block;
+		background-image: url(images/categories_darkSeat.png);
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		width: 193px / @cat-rate;
+		height: 204px / @cat-rate;
+		margin: auto;
+	}
+}
+
+	.cat-description{
+		width: 100%;
+		line-height: 1.5;
+		height: 100px / 418px * 100%;
+		padding-left: 34px / @cat-rate;
+	    font-family: @main-font;
+		&__line1 {
+			text-transform: uppercase;
+	    	color: #c7c7c7;
+	    	color: black;
+	    	// font-family: @main-font;
+	    	font-weight: 300;
+	    	font-size: 30px / @cat-rate;
+		}
+		&__line2 {
+	    	color: #c7c7c7;
+	    	font-weight: 300;
+	    	font-size: 18px/ @cat-rate;
+		}
+		&__line3 {
+	    	color: #0023ff;
+	    	font-weight: 900;
+	    	font-size: 18px / @cat-rate;
+		}
+		&--modifier1 {
+			display: inline-block;
+		    width: 450px / 1109px * 100%;
+		    position: absolute;
+		    right: 0;
+		    top: 20%;
+		}
+		&--modifier2 {
+			display: inline-block;
+		    width: 330px / 728px * 100%;
+		    position: absolute;
+		    right: 0;
+		    top: 30%;
+		}
+	}
+
+.cat-link {
+	width: 250px;
+	height: 30px;
+	margin: auto;
+	margin-top: 130px / @cat-rate;
+	&__internal {
+		text-decoration: none;
+		color: #0023ff;
+		text-transform: uppercase;
+		font-size: 18px / @cat-rate;
+		font-family: @main-font;
+		font-weight: bold;
+		&:hover {
+			cursor: pointer;
+			color: black;
+		}
+	}
+}
+
+a[class*="cat-section"]:hover {
+	-webkit-transform: scale(0.95);
+	   -moz-transform: scale(0.95);
+	    -ms-transform: scale(0.95);
+	     -o-transform: scale(0.95);
+	        transform: scale(0.95);
+	-webkit-box-shadow: 1px 1px 1px 1px red;
+	        box-shadow: 1px 1px 1px 1px red;
+
+	
+}

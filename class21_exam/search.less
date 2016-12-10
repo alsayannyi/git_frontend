@@ -1,0 +1,72 @@
+@search-rate: 1.5;
+@search-font: 'Lato', sans-serif;
+
+body {
+	background: url(images/search_background.png) top no-repeat;
+	-webkit-background-size: auto 100vh;
+	     -o-background-size: auto 100vh;
+	        background-size: auto 100vh;
+}
+
+.search-page {
+	padding-top: 172px / 1436px * 100%;	
+	width: 1572px / 2148px * 100%;
+	height: 1166px / 1436px * 100%;
+	margin: auto;
+	&__searchBox{
+		width: 100%;
+		height: 269px / 1166px * 100%;
+		}
+
+	&__searchField{
+		height: 100%;
+		width: 100%;
+		}
+	&__resultHead {
+		color: #e3e3e3;
+		font-family: @search-font;
+		font-size: 36px / @search-rate;
+		padding-top: 40px / @search-rate;
+	}
+	&__matches {
+		padding-top: 210px / 1166px * 100%;
+		width: 100%;
+		height: 200px / 1166px 100%;
+	}
+	&__result1{
+		display: inline-block;
+		width: 47%;
+		height: 200px / 1166px 100%;
+		&__img1 {
+			background-image: url(images/search_redSeat.png);
+			background-cover: cover;
+			display: inline-block;
+			width: 195px / @search-rate;
+			height: 204px / @search-rate;
+			&--modifier {
+				background-image: url(images/search_darkSeat.png);
+				background-cover: cover;
+			}
+		}
+		&__item1 {
+			width: 47%;
+			height: 200px / 1166px 100%;
+			line-height: 200px / 1166px 100%;
+			color: black;
+			font-family: @search-font;
+			font-weight: 300;
+			font-size: 72px / @search-rate;
+			
+		}
+	}
+
+}
+
+input[type="search"]::-webkit-input-placeholder {
+			font-size: 140px / @search-rate;
+			line-height: 140px / @search-rate;
+			color: black;
+			padding-bottom: 50px / @search-rate;
+			border-bottom: 1px solid #e3e3e3;
+			padding-left: 40px / @search-rate;
+			}

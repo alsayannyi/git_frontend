@@ -4,10 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Nike</title>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<link rel="stylesheet" href="nike-index.css">
 =======
 	<link rel="stylesheet" href="nike.css">
 >>>>>>> eb1914922d5e6898f8dbe1f35345afda08fb6ccf
+=======
+	<link rel="stylesheet" href="nike-index.css">
+>>>>>>> 39bf75028c2f668635319e28ff036ff89df41a52
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 </head>
@@ -27,6 +31,9 @@
 		<div class="background"></div>
 		<div class="center">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 39bf75028c2f668635319e28ff036ff89df41a52
 				<!-- left-aside section -->
 			<div class="leftBlock">
 				<p class="leftBlock__title">Huarache</p>
@@ -39,6 +46,7 @@
 				<button class="leftBlock__plus"><img class="leftBlock__img" src="images/plus.png" alt="plus"></button>
 			</div>
 		<!-- right-aside section -->
+<<<<<<< HEAD
 =======
 			<p class="center__title">Huarache</p>
 			<div class="center__boots"></div>
@@ -49,6 +57,8 @@
 
 			<!-- right aside section -->
 >>>>>>> eb1914922d5e6898f8dbe1f35345afda08fb6ccf
+=======
+>>>>>>> 39bf75028c2f668635319e28ff036ff89df41a52
 			<div class="center__aside">
 				<div class="details">
 					<div class="details__close"></div>
@@ -83,14 +93,19 @@
 					</div>
 				</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			</div>
 
 			
 =======
 
 
+=======
+>>>>>>> 39bf75028c2f668635319e28ff036ff89df41a52
 			</div>
 >>>>>>> eb1914922d5e6898f8dbe1f35345afda08fb6ccf
+
+			
 
 		</div>
 	</div>

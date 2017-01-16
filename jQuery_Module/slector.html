@@ -49,11 +49,19 @@
 	$("input[name='selector']").change( inform ); 
 	inform();
 
-	var  user = $("input[name='selector']").val();
+	// var  user = $("input[name='selector']").val();
 
-	$(user).on("submit", function() {
-		$(this).css("background", "yellow");
-			});
+	// $(user).on("submit", function() {
+	// 	$(this).css("background", "yellow");
+	// 		});
+
+	function onSubmit() {
+	  var user = $("input[name='selector']").val();
+	  $(user).css("background", "yellow");
+	}
+
+	$("input[name='submit']").on("submit", onSubmit) ;
+
 
 
 

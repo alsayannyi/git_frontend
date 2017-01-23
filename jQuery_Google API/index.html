@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        width: 100%;
+        height: 700px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Advanced Google API Map</h3>
+    <div id="map"></div>
+
+<!--      <script>
+      function initMap() {
+        var kyiv = {lat: 50.449266, lng: 30.516532};
+        var secondMarker = {lat: 50.172308,  lng:30.316338};
+        var thirdMarker = {lat: 50.258550, lng: 28.684478};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: kyiv
+        });
+
+        var marker = new google.maps.Marker({
+          position: kyiv,
+          map: map
+        });
+
+           var contentString = '<div id="content">'+
+               '<div id="siteNotice">'+
+               '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">KYIV</h1>'+
+                '<div id="bodyContent">'+
+                '<p><b>Kyiv </b>is a capital of Ukraine and the largest city ' +
+                '<p>Attribution: Kyiv, <a href="https://en.wikipedia.org/wiki/Kiev"> </p>'+
+                '</div>'+
+                '</div>';
+
+           var contentStr = '<div id="content">'+
+               '<div id="siteNotice">'+
+               '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">Vasilkov</h1>'+
+                '<div id="bodyContent">'+
+                '<p><b>Vasilkov </b>is town nearby Kyiv. ' +
+               '</div>'+
+                '</div>';
+
+          var contentStr2 = '<div id="content">'+
+               '<div id="siteNotice">'+
+               '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">Zhytomyr</h1>'+
+                '<div id="bodyContent">'+
+                '<p><b>Zhitomyr </b>is nothing special.' +
+               '</div>'+
+                '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+           content: contentString
+          });
+
+          var infowindowA = new google.maps.InfoWindow({
+           content: contentStr
+          });
+
+          var infowindowB = new google.maps.InfoWindow({
+           content: contentStr2
+          });
+
+        marker.addListener('click', function() {
+          infowindowA.open(map, point2);
+        });
+
+        marker.addListener('click', function() {
+          infowindowB.open(map, point3);
+        });
+
+      marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+        var point2 = new google.maps.Marker({
+          position: secondMarker,
+          map: map,
+          title:"Vasilkov City"
+        });
+        var point3 = new google.maps.Marker({
+          position: thirdMarker,
+          map: map,
+          title:"Zhytomyr"
+        });
+      }
+    </script> -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer</script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="apiScript.js"></script>
+
+  </body>
+</html>

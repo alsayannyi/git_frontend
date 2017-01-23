@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="foliacstyle.css">
+	<title>Foliac</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="foliacSlider.css">
+	<link rel="stylesheet" href="isotop.css">
+    <script type="text/javascript" src="slider.js"></script>
+	
+</head>
+<body>
+ <!-- header: menu and headline -->
+	<header class="img">
+		<div class="background">
+			<div class="logo">
+				<img src="images/foliac-logo1.png" alt="logo">		
+			</div>
+			<nav class="menu">
+					<ul class="menu-elements">
+						<li>Accueil&nbsp&nbsp</li>
+						<li>Portfolio&nbsp&nbsp</li>
+						<li>About&nbsp&nbsp</li>
+						<li>Contact&nbsp</li>
+					</ul>
+			</nav>
+			<div class="wrapper">
+				<div id="slider">
+						<ul class="slides">
+							<li class="slide slide1"><img src="imgSlider/1.jpg" alt="1"></li>
+							<li class="slide slide2"><img src="imgSlider/2.jpg" alt="1"></li>
+							<li class="slide slide3"><img src="imgSlider/3.jpg" alt="1"></li>
+							<li class="slide slide4"><img src="imgSlider/4.jpg" alt="1"></li>
+						</ul>
+				</div>
+			</div>
+			
+			<div class="headline">
+				<p>Voici Votre prochain portfolio</p>
+				<p>un template psd siple et gratuit</p>
+			</div>
+
+			<div class="button">
+				<a href="#"> mes travaux</a>
+			</div>
+		</div>
+	</header>
+ <!-- Block#2: images and buttons -->
+
+ <!-- new styles for isotop Filter -->
+	<div class="section2">
+		<div class="buttons isotop-filter">
+		<ul class="filter">
+			<li data-filter="*" class="active trigger"><span>All projects</span></li>
+			<li class="trigger" data-filter=".web"><span>Webdesign</span></li>
+			<li class="trigger" data-filter=".uiDesign"><span>UI/UX design</span></li>
+			<li class="trigger" data-filter=".illustration"><span>Illustration</span></li>
+		</ul>
+			<!-- <a href="#" data-filter="*" class="active"><span>All projects</span></a>
+			<a href="#" data-filter=".web"><span>Webdesign</span></a>
+			<a href="#" data-filter=".uiDesign"><span>UI/UX design</span></a>
+			<a href="#" data-filter=".illustration"><span>Illustration</span></a> -->
+			<!-- <a href="#"><span>Motion Design</span></a> -->
+		</div>
+			<!-- styles for isotope -->
+		<div class="images" id="isotop-content">
+
+				<div class="img web">
+					<img src="templates/iso1.jpg" alt="">
+				</div>
+				<div class="img uiDesign">
+					<img src="templates/iso2.jpg" alt="">
+				</div>
+				<div class="img illustration">
+					<img src="templates/iso3.jpg" alt="">
+				</div>
+				<div class="img web">
+					<img src="templates/iso4.jpg" alt="">
+				</div>
+				<div class="img uiDesign">
+					<img src="templates/iso5.jpg" alt="">
+				</div>
+				<div class="img illustration">
+					<img src="templates/iso6.jpg" alt="">
+				</div>
+				<div class="img web">
+					<img src="templates/iso7.jpg" alt="">
+				</div>
+				<div class="img uiDesign">
+					<img src="templates/iso8.jpg" alt="">
+				</div>
+				<div class="img illustration uiDesign web">
+					<img src="templates/iso9.jpg" alt="">
+				</div>
+				<div class="img illustration">
+					<img src="templates/iso10	.jpg" alt="">
+				</div>
+		</div>
+
+		<!-- styles without isotope -->
+<!-- 		<div class="images">
+			<div class="images1">
+				<div class="img1">
+					<div class="none"><p>Forest app</p></div>
+				</div>
+				
+				<div class="img4">
+					<div class="none"><p>Forest app</p></div>				
+				</div>
+			</div>
+			<div class="images2"> 
+					<div class="img2">
+					<div class="none"><p>Forest app</p></div>
+				</div>
+				
+				<div class="img3">
+					<div class="none"><p>Forest app</p></div>				
+				</div>
+			</div>
+		</div> -->
+		<!-- styles without isotope end -->
+	
+
+	</div>
+ <!-- block#2 end -->
+ <!-- block#3: background + Text -->
+	<div class="section3">
+		<div class="background2">
+			<div class="text">
+				<p>Michel Dupont</p>
+				<p><span> Webdesigner, illustrator, auteur</span></p>
+				<p id="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper erat augue, at molestie massa euismod ac. Quisque congue lobortis quam in suscipit. Maecenas finibus, ante vel dignissim gravida, lorem dolor bibendum arcu, vel vulputate metus orci et nisl. In elementum scelerisque mauris nec tincidunt.</p>
+
+				<div class="button3">
+					<a href="#">me contacter</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- block3 end -->
+	<!-- block4: Contact Form -->
+	<div class="section4">
+		
+		<form action="" class="contactfield">
+			<h2>Me contacter</h2>
+			<!-- name field -->
+			<div class="name">
+				<img src="images/form-element2.png" alt="name">
+				<input type="text" name="fillname" placeholder="Votre nom" >
+			</div>
+			<!-- email field -->
+			<div class="email">
+				<img src="images/form-element2.png" alt="name">
+				<input type="email" name="email" placeholder="Votre email">
+			</div>
+			<!-- text field -->
+			<div class="message">
+				<img src="images/form-element.png" alt="name">
+				<textarea name="fillmail" cols="30" rows="10" placeholder="Votre message"></textarea>
+			</div>
+
+			<input type="submit" value="Envoyer">
+		</form>
+	</div>
+	<!-- block4 end -->
+	<!-- block5: networks -->
+	<footer>
+		<div class="bottom">
+			<div class="copyright"><p> Copyright &copy 2015 by beneggen - www.benegger.fr</p></div>
+			<div class="networks">
+			<a href="# "><img src="images/footer-networks-icons.png" alt="social"></a>
+			</div>
+		</div>
+	</footer>
+
+<!-- isotope scripts -->
+<script src="javascript/isotope.pkgd.js"></script>
+<script src="javascript/isotop.js"></script>
+
+</body>
+</html>

@@ -1,13 +1,16 @@
 window.initMap = function() {
         var kyiv = {lat: 50.449266, lng: 30.516532};
-        var secondMarker = {lat: 46.483207,  lng:30.731300};
+        var secondMarker = {lat: 46.468987,  lng:30.738250};
         var thirdMarker = {lat: 49.841673, lng: 24.032759};
-
+       
+      
 
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 17,
           center: kyiv
         });
+
+       
 
         var marker = new google.maps.Marker({
           position: kyiv,
@@ -21,6 +24,7 @@ window.initMap = function() {
           title:"Odessa",
           icon: "tap.png"
         });
+
         var point3 = new google.maps.Marker({
           position: thirdMarker,
           map: map,
@@ -59,8 +63,6 @@ window.initMap = function() {
 
          // text-end
 
-
-
           var infowindow = new google.maps.InfoWindow({
            content: contentString
           });
@@ -72,6 +74,7 @@ window.initMap = function() {
           var infowindowB = new google.maps.InfoWindow({
            content: contentStr2
           });
+
 
         point2.addListener('click', function() {
           infowindowA.open(map, point2);
@@ -103,17 +106,33 @@ window.initMap = function() {
     map.setCenter(point3.getPosition());
   });
 
-// marker.addListener('click', function() {
-//   map.setCenter(secondMarker)
-//         });
+        // direction added
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        directionsDisplay.setMap(map); 
 
-// marker.addListener('click', function() {
-//   map.setCenter(thirdMarker)
-//         });
+        var onChangeHandler = function() {
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+        };
+        document.getElementById('start').addEventListener('change', onChangeHandler);
+        document.getElementById('end').addEventListener('change', onChangeHandler);
+      }
 
-// marker.addListener('click', function() {
-//   map.setCenter(kyiv)
-//         });
+        function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        directionsService.route({
+          origin: document.getElementById('start').value,
+          destination: document.getElementById('end').value,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+
+// end of direction  section
+
 }
 
 

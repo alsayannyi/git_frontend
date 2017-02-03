@@ -1,3 +1,12 @@
+.wrapper {
+	opacity: 0.5;
+    position: absolute;
+    // position: relative;
+    top: -105px;
+	height: 100%;
+	// z-index: -1;
+}
+
 #slider {
 	overflow: hidden;
 	// width: 100%;
@@ -29,11 +38,3 @@
 // 	content: "";
 // 	clear: left;
 // }
-
-.wrapper {
-	opacity: 0.5;
-    position: relative;
-    top: -105px;
-	height: 100%;
-	// z-index: -1;
-}

@@ -5,32 +5,43 @@
 	<link rel="stylesheet" href="foliacstyle.css">
 	<title>Foliac</title>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<!-- <link rel="stylesheet"  href="./font-awesome-4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet"  href="./font-awesome/css/font-awesome.min.css">
+
+
 	<link rel="stylesheet" href="foliacSlider.css">
 	<link rel="stylesheet" href="isotop.css">
 	<!-- media queries -->
 	<link rel="stylesheet" media="screen and (max-width: 480px)" href="media480.css">
 	<link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" href="media768.css">
 	<link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 960px)" href="media960.css">
-	<link rel="stylesheet" media="screen and (min-width: 1220px)" href="">
+	<link rel="stylesheet" media="screen and (min-width: 1220px)" href="media1220.css">
 	<!-- Media End -->
     <script type="text/javascript" src="slider.js"></script>
 	
 </head>
 <body>
+<div id="site-wrapper">
+	<div id="site-canvas">
+		<nav class="menu" id="site-menu">
+			<ul class="menu-elements">
+				<li>Accueil&nbsp&nbsp</li>
+				<li>Portfolio&nbsp&nbsp</li>
+				<li>About&nbsp&nbsp</li>
+				<li>Contact&nbsp</li>
+			</ul>
+		</nav>
+			
+
  <!-- header: menu and headline -->
 	<header class="img">
 		<div class="background">
 			<div class="logo">
 				<img src="images/foliac-logo1.png" alt="logo">		
 			</div>
-			<nav class="menu">
-					<ul class="menu-elements">
-						<li>Accueil&nbsp&nbsp</li>
-						<li>Portfolio&nbsp&nbsp</li>
-						<li>About&nbsp&nbsp</li>
-						<li>Contact&nbsp</li>
-					</ul>
-			</nav>
+			<!-- <a href="#" id="big-sexy" ><i class="fa fa-dribbble" style="font-size:18px; color:white; padding-top:16px; padding-left:16px" aria-hidden="true"></i></a> -->
+			<a href="#" id="big-sexy" class="toggle-nav btn btn-lg btn-success"><i class="icon-list" style="font-size:30px; color:white;" aria-hidden="true"></i></a>
+
 			<div class="wrapper">
 				<div id="slider">
 						<ul class="slides">
@@ -159,6 +170,18 @@
 <!-- isotope scripts -->
 <script src="javascript/isotope.pkgd.js"></script>
 <script src="javascript/isotop.js"></script>
+<script>
+	$(function() {
 
+	    $('.toggle-nav').click(function() {
+	      $(this).toggleClass( 'switchIcon');
+	      $( '#site-wrapper' ).toggleClass( 'show-nav');
+
+	    });
+	});
+</script>
+
+	</div>
+</div>
 </body>
 </html>

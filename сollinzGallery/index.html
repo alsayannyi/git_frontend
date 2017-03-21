@@ -51,6 +51,7 @@
 			            </div>
 		            </div>
 	            </div>
+	            
             </div>
 
 		</div>
@@ -60,7 +61,7 @@
 		</div>
 		<div class="row">
 		<div class="col-lg-12 col-md-12">
-		  <div class="ba-slider">
+		  <div class="ba-slider slider">
 			<img src="./images/galleryHeader.png" alt="" class="ba-slider__item1" id="opt1">
 			<img src="./images/galleryHeader2.png" alt="" class="ba-slider__item2" id="opt1">
 			<img src="./images/galleryHeader3.png" alt="" class="ba-slider__item3" id="opt1">
@@ -245,16 +246,16 @@ $( window ).ready(function() {
 	if (viewpoint < 544) {
 	$( "div[class*='headline-wrapper']" ).attr('id', 'title-position');
 	$( "div[class*='col-xs']" ).each(function() {
-	$(this).addClass( "crearfix add-gap");
+	$(this).addClass( "crearfix add-gap padding0");
 });
 } else if (viewpoint < 768) {
 	$( "div[class*='headline-wrapper']" ).attr('id', 'title-position');
 	$("div[class*='col-sm']").each(function(){
-	$(this).addClass( "crearfix add-gap");
+	$(this).addClass( "crearfix add-gap padding0");
 });
 } else if (viewpoint < 975){
 	$("div[class*='col-md']").each(function(){
-	$(this).addClass("crearfix add-gap");
+	$(this).addClass("crearfix add-gap padding0");
 	$(".headline-wrapper").addClass( "title-position");
 
 });

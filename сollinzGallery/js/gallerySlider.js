@@ -1,8 +1,6 @@
-;(function($){
-	"use strict";
+$(document).ready(function (){
 
-	$(function(){
-	  $('.ba-slider').slick({
+	  $('.slider').slick({
 	  	dots: false,
 	  	infinite: true,
 	  	prevArrow: ".ba-slider__arrow1",
@@ -14,5 +12,4 @@
   		// slidesToShow: 3,
   		// slidesToScroll: 1
 	  });
-	})
-})(jQuery);
+});

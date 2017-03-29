@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>File Sharing</title>
+	<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.0.min.js"
+integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Styles and Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Stardos+Stencil:400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/less_css.css">
+</head>
+<body>
+
+<header>
+	<div class="logo col-xs-12 pull-left">
+		<img src="images/logo.png" alt="logo" class="img-responsive">
+	</div>
+</header>
+
+<section class="wrapper center-block">
+	<form class="imageUpload text-center" enctype="multipart/form-data">
+		<p class="text-center text-uppercase">send</p>
+	    <label for="file-input">
+	        <img src="images/rabbit1.png" class="img-responsive rabbit" id="rabbit" onmouseover="mouseOver()" onmouseout="mouseOut()">
+	    </label>
+	    <input type="image" name="startUpload" class="btn btn-primary" id="file-input" data-toggle="modal" data-target="#myModal"/>
+		<p class="text-center text-uppercase">data</p>
+	    <!-- <input id="file-input" type="file"> -->
+	</form>
+</section>
+
+
+<!-- modal hidden for upload -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog externalBlock" role="document">
+    <div class="modal-content wrapper1">
+
+      <div class="modal-body internalBlock">
+       <section class="formWrapper center-block">
+			<form class="uploadForm text-center" enctype="multipart/form-data" method="POST">
+			  <label class="btn btn-default btn-file addFile text-center">
+			    <span class="center-block">ADD</span>
+			    <input type="file" class="hidden" id="fileUpload" name="uploadedfile[]" multiple>
+			</label>
+			<ul id="fileList"></ul>
+			<button type="button" class="btn btn-default back addFile text-center" data-dismiss="modal">BACK</button>
+       		<button type="submit" class="btn btn-primary addFile send text-center">SEND</button>
+			</form>
+		</section>
+      </div>
+        
+    </div>  <!-- end modal-content -->
+  </div> <!-- end modal-dialog -->
+</div> <!-- end modal -->
+
+
+<footer >
+	<div class="footerImage pull-right">
+		<img src="images/rabbits.png" alt="rabbits" class="img-responsive">
+	</div>	
+</footer>
+
+<script>
+	// changing rabbit on hover
+	function mouseOver() {
+   		document.getElementById("rabbit").src= "images/rabbitFile.png";
+	}
+	function mouseOut() {
+    	document.getElementById("rabbit").src= "images/rabbit1.png";
+	}
+
+	$('#myModal').modal('toggle');
+
+	// add fileName
+	$("document").ready(function(){
+    
+    $("#fileUpload").on("change", function() {
+                //here add functions
+                var file = this.files[0];
+                var fileSize = file.size;
+                var getFullName = $('#fileUpload').val();
+                var splitName = getFullName.split("\\");
+                var fileName = splitName[2];
+                var addFileString =$('<li class="uploadParams">' + fileName + " " + fileSize + "bytes" + 
+                	'<a class="glyphicon glyphicon-remove-circle pull-right removeFile btn" aria-hidden="true"></a>' +
+                	 '</li>').appendTo('#fileList');
+            });
+
+
+});
+
+
+
+// $( ".removeFile" ).on( 'click', function() {
+// 	// e.preventDefault();
+//   $( ".uploadParams" ).each(function() {
+//     $(this).parent().remove();
+//     return false;
+//   });
+// });
+	if ($('.uploadParams').length) {
+		// statement
+		$('.removeFile').on( 'click', function (e) {
+        e.preventDefault()
+        $(e.currentTarget).parent().remove(); // delete from ul
+
+        return false;
+    });
+	}
+
+
+</script>
+</body>
+</html>

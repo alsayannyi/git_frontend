@@ -31,10 +31,10 @@ crossorigin="anonymous"></script>
 <section class="wrapper center-block">
 	<form class="imageUpload text-center" enctype="multipart/form-data">
 		<p class="text-center text-uppercase">send</p>
-	    <label for="file-input">
-	        <img src="images/rabbit1.png" class="img-responsive rabbit" id="rabbit" onmouseover="mouseOver()" onmouseout="mouseOut()">
+	    <label for="file-input" >
+	        <img src="images/rabbit1.png" class="img-responsive rabbit" id="rabbit" onmouseover="mouseOver()" onmouseout="mouseOut()" >
 	    </label>
-	    <input type="image" name="startUpload" class="btn btn-primary" id="file-input" data-toggle="modal" data-target="#myModal"/>
+	    <input type="image" name="startUpload" class="btn btn-primary" id="file-input" data-toggle="modal" data-target="#myModal" onclick=" return modalWindow()"/>
 		<p class="text-center text-uppercase">data</p>
 	    <!-- <input id="file-input" type="file"> -->
 	</form>
@@ -81,7 +81,12 @@ crossorigin="anonymous"></script>
     	document.getElementById("rabbit").src= "images/rabbit1.png";
 	}
 
-	$('#myModal').modal('toggle');
+	// launch Modal Window
+	function modalWindow () {
+		return false;
+		$('#myModal').modal('toggle');
+
+	}
 
 	// add fileName
 	$("document").ready(function(){
